@@ -1,0 +1,20 @@
+<div class="col-sm-4 col-sm-offset-4">
+    <div class="well">
+        <h3>Register</h3>
+        <form>
+            <div class="form-group">
+                <input type="name" class="form-control" placeholder="Name" ng-model="newUser.name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" ng-model="newUser.email">
+            </div>
+
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" ng-model="newUser.password">
+            </div>
+            <button class="btn btn-primary" ng-click="register()">Submit</button>
+        </form>
+        <br/>
+        <a ui-sref="login" >Login</a>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+
+<div class="col-sm-4 col-sm-offset-4">
+    <div class="alert alert-danger" ng-if="loginError" role="alert">{{loginErrorText}}</div>
+    <div class="well">
+        <h3>Login</h3>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email" ng-model="email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" ng-model="password">
+            </div>
+            <button class="btn btn-primary" ng-click="login()">Submit</button>
+        </form>
+        <br/>
+        <a ui-sref="register" >Register</a>
+    </div>
+</div>
